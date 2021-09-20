@@ -1,3 +1,5 @@
 *.c
 *.o
-
+.clang-format
+*.c.formatted
+contest
