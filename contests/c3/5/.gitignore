@@ -1,5 +1,5 @@
 *.c
 *.o
 .clang-format
-*.c.formatted
+*.c.fmt
 contest
