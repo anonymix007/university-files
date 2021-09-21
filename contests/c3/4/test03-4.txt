@@ -1,0 +1,49 @@
+MAIN /{
+#include <stdio.h>
+int satsum(int v1, int v2);
+int main(void){
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("%d\n",satsum(a,b));
+}
+}/
+INPUT
+/{42 27}/
+OUTPUT
+/{69
+}/
+INPUT
+/{-42 -27}/
+OUTPUT
+/{-69
+}/
+INPUT
+/{2147483647 9}/
+OUTPUT
+/{2147483647
+}/
+INPUT
+/{-2147483648 2147483647}/
+OUTPUT
+/{-1
+}/
+INPUT
+/{-2147483647 -9}/
+OUTPUT
+/{-2147483648
+}/
+INPUT
+/{1073741824 1073741824}/
+OUTPUT
+/{2147483647
+}/
+INPUT
+/{-1073741824 -1073741824}/
+OUTPUT
+/{-2147483648
+}/
+INPUT
+/{-1073741828 -1073741824}/
+OUTPUT
+/{-2147483648
+}/
