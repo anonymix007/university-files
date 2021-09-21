@@ -1,3 +1,4 @@
 BasedOnStyle: mozilla
 IndentWidth: 4
 PointerAlignment: Right
+SpaceAfterCStyleCast: true

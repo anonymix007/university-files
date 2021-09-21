@@ -1,4 +1,4 @@
-TIMEOUT/{1.0}/
+TIMEOUT/{2.5}/
 INPUT
 /{nonexistent.txt
 42
@@ -302,12 +302,18 @@ OUTPUT
 8 6
 9 8
 }/
-STARTUP/{
-cat tardisk* | tar xzpvf -
-}/
+
+
+
+
 INPUT
 /{767b5475-ea84-4cf3-965e-6f7ece23e4b7.txt
 /dev/null}/
+
+STARTUP/{
+./extract.sh
+}/
+
 OUTPUT
 /{0 92472609
 1 50266277
