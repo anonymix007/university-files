@@ -20,6 +20,9 @@ STARTUP
 /{
 chmod -r inaccessible.txt
 }/
+COMMENT/{
+Try to run `chmod -r inaccessible.txt` if this test fails
+}/
 INPUT
 /{inaccessible.txt
 42
