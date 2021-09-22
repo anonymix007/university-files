@@ -1,4 +1,4 @@
-TIMEOUT/{2.5}/
+TIMEOUT/{1.0}/
 INPUT
 /{nonexistent.txt
 42
