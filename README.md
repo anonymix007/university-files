@@ -19,3 +19,9 @@ You may have to use python 3.9 or later.
 5. `git commit -m "Message text"`
 6. `git push`
 7. Open pull request
+
+For more information refer to [GitHub Docs](https://docs.github.com/en/get-started).
+#### Brief summary
+1. [Create personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) (it will be used as password in `git`)
+2. [Cache your GitHub credentials in git](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git)
+3. [Keep your fork up-to-date with upstream repository](https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)
