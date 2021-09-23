@@ -13,7 +13,7 @@ You may have to use python 3.9 or later.
 
 ### Contributing
 1. Fork repository
-2. `git clone <your clone address>`
+2. `git clone <your fork address>`
 3. Make changes
 4. `git add .`
 5. `git commit -m "Message text"`
