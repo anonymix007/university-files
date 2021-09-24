@@ -16,12 +16,10 @@ OUTPUT
 9 0
 }/
 
+
 STARTUP
 /{
 chmod -r inaccessible.txt
-}/
-COMMENT/{
-Try to run `chmod -r inaccessible.txt` if this test fails
 }/
 INPUT
 /{inaccessible.txt
@@ -38,6 +36,9 @@ OUTPUT
 7 0
 8 0
 9 0
+}/
+COMMENT/{
+Try to run `chmod -r inaccessible.txt` if this test fails
 }/
 CLEANUP
 /{
