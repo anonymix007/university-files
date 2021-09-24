@@ -7,10 +7,21 @@
 Directory `contests` will contain tests for corresponding contests.  
 You may have to use python 3.9 or later.
 #### Install vival
-`pip3 install vival==3.0.1`
+```
+pip3 install vival==3.0.1
+```
+#### Install yandex disk utility
+```
+pip3 install wldhx.yadisk-direct
+```
 #### Perform tests from file `test03-3.txt` for program `contest`
-`vival contest -t test03-3.txt`
-
+```
+vival contest -t test03-3.txt
+```
+#### Perform tests from file `test03-3.txt` for program `contest.c`
+```
+vival contest.c -t test03-3.txt
+```
 ### Contributing
 1. Fork repository
 2. `git clone <your fork address>`
