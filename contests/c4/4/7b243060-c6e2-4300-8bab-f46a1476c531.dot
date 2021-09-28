@@ -1,0 +1,15 @@
+digraph tree {
+ node [shape=circle]
+nodesep=0.4;
+ranksep=0.5;
+splines=polyline
+  252;
+  252:sw->204:n ;
+  204;
+  {node[style=invis, width=.1]; il_204; }
+  204:sw->il_204 [style=invis];
+  {node[style=invis, width=.1]; ir_204; }
+  204:se->ir_204 [style=invis];
+  {node[style=invis, width=.1]; ir_252; }
+  252:se->ir_252 [style=invis];
+}

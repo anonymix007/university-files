@@ -2,4 +2,6 @@
 *.o
 .clang-format
 *.c.fmt
+*.h
 contest
+reader

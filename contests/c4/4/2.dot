@@ -1,0 +1,55 @@
+digraph tree {
+ node [shape=circle]
+nodesep=0.4;
+ranksep=0.5;
+splines=polyline
+  48;
+  48:sw->5:n ;
+  5;
+  5:sw->3:n ;
+  3;
+  3:sw->2:n ;
+  2;
+  {node[style=invis, width=.1]; il_2; }
+  2:sw->il_2 [style=invis];
+  {node[style=invis, width=.1]; ir_2; }
+  2:se->ir_2 [style=invis];
+  3:se->4:n ;
+  4;
+  {node[style=invis, width=.1]; il_4; }
+  4:sw->il_4 [style=invis];
+  {node[style=invis, width=.1]; ir_4; }
+  4:se->ir_4 [style=invis];
+  5:se->6:n ;
+  6;
+  {node[style=invis, width=.1]; il_6; }
+  6:sw->il_6 [style=invis];
+  6:se->9:n ;
+  9;
+  {node[style=invis, width=.1]; il_9; }
+  9:sw->il_9 [style=invis];
+  {node[style=invis, width=.1]; ir_9; }
+  9:se->ir_9 [style=invis];
+  48:se->105:n ;
+  105;
+  105:sw->66:n ;
+  66;
+  66:sw->51:n ;
+  51;
+  {node[style=invis, width=.1]; il_51; }
+  51:sw->il_51 [style=invis];
+  {node[style=invis, width=.1]; ir_51; }
+  51:se->ir_51 [style=invis];
+  {node[style=invis, width=.1]; ir_66; }
+  66:se->ir_66 [style=invis];
+  105:se->117:n ;
+  117;
+  {node[style=invis, width=.1]; il_117; }
+  117:sw->il_117 [style=invis];
+  117:se->144:n ;
+  144;
+  {node[style=invis, width=.1]; il_144; }
+  144:sw->il_144 [style=invis];
+  {node[style=invis, width=.1]; ir_144; }
+  144:se->ir_144 [style=invis];
+}
