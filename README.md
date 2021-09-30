@@ -6,6 +6,10 @@
 ### Tests
 Directory `contests` will contain tests for corresponding contests.  
 You may have to use python 3.9 or later.
+#### Download only latest tests without history
+```
+git clone --depth 1 https://github.com/anonymix007/university-files.git
+```
 #### Install vival
 ```
 pip3 install vival==3.0.1
