@@ -2,3 +2,6 @@ BasedOnStyle: mozilla
 IndentWidth: 4
 PointerAlignment: Right
 SpaceAfterCStyleCast: true
+ColumnLimit: 100
+ContinuationIndentWidth: 8
+AlignAfterOpenBracket: DontAlign
