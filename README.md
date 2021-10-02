@@ -12,7 +12,7 @@ git clone --depth 1 https://github.com/anonymix007/university-files.git
 ```
 #### Install vival
 ```
-pip3 install vival==3.0.1
+pip3 install vival==3.1.13
 ```
 #### Install yandex disk utility
 ```
