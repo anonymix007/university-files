@@ -133,3 +133,8 @@ INPUT/{}/
 OUTPUT/{OK
 }/
 
+CMD/{2bc6321e-6969-4d58-b09a-dd73d5794ba8}/
+INPUT/{}/
+OUTPUT/{OK
+}/
+
