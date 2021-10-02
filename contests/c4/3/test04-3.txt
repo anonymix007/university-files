@@ -11,13 +11,11 @@ OUTPUT
 INPUT/{}/
 CMD/{t3.data}/
 OUTPUT
-/{
-}/
+/{}/
 INPUT/{}/
 CMD/{t4.data}/
 OUTPUT
-/{
-}/
+/{}/
 INPUT/{}/
 CMD/{t5.data}/
 OUTPUT
@@ -26,8 +24,7 @@ OUTPUT
 INPUT/{}/
 CMD/{t6.data}/
 OUTPUT
-/{
-}/
+/{}/
 INPUT/{}/
 CMD/{t7.data t6.data}/
 OUTPUT
