@@ -1,5 +1,13 @@
 #!/bin/bash
+
+printhex(){
+echo Got:
+hexdump -C $1.in
+echo Ans:
+hexdump -C $1.ans
+}
+
 cp $1.bin $1.in
 ./contest $1.in
-cmp --silent $1.in $1.ans && echo 'OK' || echo 'FUCK'
+cmp --silent $1.in $1.ans && echo 'OK' || printhex $1
 rm -f $1.in
