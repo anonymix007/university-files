@@ -13,6 +13,10 @@ CMD/{}/
 OUTPUT/{37777777777
 }/
 
+CMD/{rwxrwxrwx666}/
+OUTPUT/{37777777777
+}/
+
 CMD/{fuckthiss}/
 OUTPUT/{37777777777
 }/
