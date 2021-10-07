@@ -1,4 +1,4 @@
-TIMEOUT/{1.0}/
+TIMEOUT/{0.01}/
 STARTUP/{./download.sh}/
 CMD/{test1}/
 INPUT/{}/
