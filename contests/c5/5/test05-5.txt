@@ -1,3 +1,4 @@
+TIMEOUT/{1.0}/
 STARTUP/{./download.sh}/
 CMD/{test1}/
 INPUT/{}/
@@ -25,19 +26,19 @@ OUTPUT/{65534
 
 CMD/{test6}/
 INPUT/{}/
-OUTPUT/{65534
-}/
+OUTPUT/{}/
 
 CMD/{test7}/
 INPUT/{}/
-OUTPUT/{
+OUTPUT/{2
 }/
 
 CMD/{test8}/
 INPUT/{}/
-OUTPUT/{}/
+OUTPUT/{0
+}/
 
 CMD/{test9}/
 INPUT/{}/
-OUTPUT/{2
+OUTPUT/{0
 }/
