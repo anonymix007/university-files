@@ -3,4 +3,6 @@
 .clang-format
 *.c.fmt
 contest
-test*
+test8
+test9
+tests.tar.xz
