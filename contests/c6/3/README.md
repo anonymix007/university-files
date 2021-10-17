@@ -6,3 +6,9 @@ subprocess.run([self._lang2compiler[self.guessed_lang].value] + self.flags + [st
                            check=True)
 ```
 Put this instead of line 93 (3.2.0)
+
+Or try my fix (unstable):
+```sh
+pip uninstall vival -y
+pip install git+https://github.com/anonymix007/vival.gi
+```
