@@ -7,23 +7,23 @@
 Directory `contests` will contain tests for corresponding contests.  
 You may have to use python 3.9 or later.
 #### Download only latest tests without history
-```
+```sh
 git clone --depth 1 https://github.com/anonymix007/university-files.git
 ```
 #### Install vival
-```
-pip3 install vival==3.2.0
+```sh
+pip3 install vival==3.2.1
 ```
 #### Install yandex disk utility
-```
+```sh
 pip3 install wldhx.yadisk-direct
 ```
 #### Perform tests from file `test03-3.txt` for program `contest`
-```
+```sh
 vival contest -t test03-3.txt
 ```
 #### Perform tests from file `test03-3.txt` for program `contest.c`
-```
+```sh
 vival contest.c -t test03-3.txt
 ```
 ### Contributing
