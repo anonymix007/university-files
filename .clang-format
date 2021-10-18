@@ -5,3 +5,5 @@ SpaceAfterCStyleCast: true
 ColumnLimit: 100
 ContinuationIndentWidth: 8
 AlignAfterOpenBracket: DontAlign
+AlignOperands: DontAlign
+# AllowAllArgumentsOnNextLine: true
