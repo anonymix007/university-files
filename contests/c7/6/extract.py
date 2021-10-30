@@ -13,7 +13,7 @@ for i in range(0, len(fileContent) - 8):
     val = int.from_bytes(int_v, 'little')
     if val == 8888:
         addr = int.from_bytes(fileContent[i + 8 : i + 16],'little')
-        print('Found! Next 8 bytes are: ' + hex(addr) + '. This is address of int[], that is, the value in hashmap for key 8888')
+        print('Found! Next 8 bytes are: ' + hex(addr) + '. This is int*, that is, the address of value in hashmap for key 8888')
 
 
 print('Refer to std::unordered_map definition for more details')
