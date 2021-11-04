@@ -1,0 +1,11 @@
+*.c
+*.o
+.clang-format
+*.c.fmt
+contest
+relat
+relat.jar
+stub.sh
+valgr
+main
+main_fast
