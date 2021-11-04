@@ -1,0 +1,67 @@
+CMD/{./libnull.so.1 get42 i}/
+OUTPUT/{42
+}/
+CMD/{./libnull.so.1 sum iiii 42 42 69}/
+OUTPUT/{153
+}/
+CMD/{./libnull.so.1 fmadd iiii 1 2 3}/
+OUTPUT/{5
+}/
+CMD/{./libnull.so.1 fmadd iiii 3 2 1}/
+OUTPUT/{7
+}/
+CMD/{./libnull.so.1 fmsub iiii 42 2 1}/
+OUTPUT/{83
+}/
+CMD/{./libnull.so.1 retprintd dd 666.0}/
+OUTPUT/{666
+434
+}/
+CMD/{./libnull.so.1 retprintd dd 69.42}/
+OUTPUT/{69.42
+-nan
+}/
+CMD/{./libnull.so.1 getf s}/
+OUTPUT/{https://www.youtube.com/watch?v=9sE_G_KoWh4
+}/
+CMD/{./libnull.so.1 getlnk si 0}/
+OUTPUT/{https://www.youtube.com/channel/UCdARvxgVxVzxvtyPb2CqO-w
+}/
+CMD/{./libnull.so.1 getlnk si 2}/
+OUTPUT/{https://www.youtube.com/watch?v=4xmckWVPRaI
+}/
+CMD/{./libnull.so.1 printd vd 434.0}/
+OUTPUT/{434
+}/
+CMD/{./libnull.so.1 sumid ddi 150 150}/
+OUTPUT/{300
+}/
+CMD/{./libnull.so.1 mul ddi 600 2}/
+OUTPUT/{300
+}/
+CMD/{./libnull.so.1 div ddi 2 21}/
+OUTPUT/{42
+}/
+CMD/{./libnull.so.1 div ddi 2 21}/
+OUTPUT/{42
+}/
+CMD/{./librick.so.1 astley s}/
+OUTPUT/{https://www.youtube.com/watch?v=6bmTATPmfCA
+}/
+CMD/{./librick.so.1 roll si 0}/
+OUTPUT/{https://www.youtube.com/watch?v=dQw4w9WgXcQ
+}/
+CMD/{./librick.so.1 roll si 1}/
+OUTPUT/{https://www.youtube.com/watch?v=9sE_G_KoWh4
+}/
+CMD/{./librick.so.1 roll si 2}/
+OUTPUT/{https://www.youtube.com/watch?v=1_Z5q152GSQ
+}/
+CMD/{./librick.so.1 roll si 3}/
+OUTPUT/{https://www.youtube.com/watch?v=TRfZzU3e3X0
+}/
+CMD/{./librick.so.1 roll si 4}/
+OUTPUT/{https://www.youtube.com/watch?v=6bmTATPmfCA
+}/
+CMD/{./librick.so.1 donotrunme v}/
+OUTPUT/{}/
