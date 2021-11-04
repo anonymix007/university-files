@@ -1,3 +1,8 @@
+CMD/{libc.so.6 printf vssid 'Hello: %s, %d, %f' abc 10 12.4}/
+OUTPUT/{Hello: abc, 10, 12.400000}/
+CMD/{libc.so.6 puts vs 'Hell yeah'}/
+OUTPUT/{Hell yeah
+}/
 CMD/{./libnull.so.1 get42 i}/
 OUTPUT/{42
 }/
@@ -44,6 +49,24 @@ OUTPUT/{42
 }/
 CMD/{./libnull.so.1 div ddi 2 21}/
 OUTPUT/{42
+}/
+CMD/{./libnull.so.1 mul ddi 1 0}/
+OUTPUT/{inf
+}/
+CMD/{./libnull.so.1 mul ddi -1 0}/
+OUTPUT/{-inf
+}/
+CMD/{./libnull.so.1 mul ddi 0 1}/
+OUTPUT/{0
+}/
+CMD/{./libnull.so.1 sumdd ddd inf inf}/
+OUTPUT/{inf
+}/
+CMD/{./libnull.so.1 sumdd ddd 9999999999999999 1}/
+OUTPUT/{1e+16
+}/
+CMD/{./libnull.so.1 sumdd ddd 9e300 1e301}/
+OUTPUT/{1.9e+301
 }/
 CMD/{./librick.so.1 astley s}/
 OUTPUT/{https://www.youtube.com/watch?v=6bmTATPmfCA
