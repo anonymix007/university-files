@@ -65,6 +65,11 @@ OUTPUT/{inf
 CMD/{./libnull.so.1 sumdd ddd 9999999999999999 1}/
 OUTPUT/{1e+16
 }/
+CMD/{./libnull.so.1 largePageMinimum i}/
+COMMENT/{Ignore if this failed}/
+OUTPUT/{Try to find all easter eggs
+2097152
+}/
 CMD/{./libnull.so.1 sumdd ddd 9e300 1e301}/
 OUTPUT/{1.9e+301
 }/
