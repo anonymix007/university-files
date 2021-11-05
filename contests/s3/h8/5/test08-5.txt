@@ -1,0 +1,40 @@
+CMD/{a}/
+OUTPUT/{cd b
+cd c
+cd ..
+cd d
+cd ..
+cd ..
+cd c
+cd d
+cd ..
+cd ..
+cd F
+cd H
+cd ..
+cd ..
+}/
+CMD/{f}/
+OUTPUT/{cd A
+cd HateThis
+cd ..
+cd ..
+cd b
+cd Never gonna
+cd give you up
+cd ..
+cd let you down
+cd ..
+cd make you cry
+cd ..
+cd run around and desert you
+cd ..
+cd say goodbye
+cd ..
+cd tell a lie and hurt you
+cd ..
+cd ..
+cd ..
+cd C
+cd ..
+}/

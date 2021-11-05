@@ -1,0 +1,7 @@
+*.c
+*.o
+.clang-format
+*.c.fmt
+contest
+jpg
+s
