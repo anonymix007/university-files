@@ -1,0 +1,11 @@
+#!/bin/bash
+
+printhex(){
+echo Got:
+hexdump -C $1.bin
+echo Ans:
+hexdump -C $1.ans
+}
+./contest $1.bin $2 $3
+cmp --silent $1.bin $1.ans && echo 'OK' || printhex $1
+rm -f $1.bin
