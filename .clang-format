@@ -6,4 +6,5 @@ ColumnLimit: 100
 ContinuationIndentWidth: 8
 AlignAfterOpenBracket: DontAlign
 AlignOperands: DontAlign
+IndentCaseLabels: false
 # AllowAllArgumentsOnNextLine: true
