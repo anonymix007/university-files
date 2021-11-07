@@ -82,3 +82,185 @@ cd z
 cd ..
 cd ..
 }/
+CMD/{.}/
+OUTPUT/{cd a
+cd b
+cd c
+cd ..
+cd d
+cd ..
+cd ..
+cd c
+cd d
+cd ..
+cd ..
+cd F
+cd H
+cd ..
+cd ..
+cd ..
+cd f
+cd A
+cd HateThis
+cd ..
+cd ..
+cd b
+cd Never gonna
+cd give you up
+cd ..
+cd let you down
+cd ..
+cd make you cry
+cd ..
+cd run around and desert you
+cd ..
+cd say goodbye
+cd ..
+cd tell a lie and hurt you
+cd ..
+cd ..
+cd ..
+cd C
+cd ..
+cd D
+cd a
+cd ..
+cd aaa
+cd ..
+cd b
+cd ..
+cd check
+cd ..
+cd d
+cd ..
+cd e
+cd ..
+cd ffff
+cd ..
+cd g
+cd ..
+cd h
+cd ..
+cd J
+cd ..
+cd N
+cd ..
+cd p
+cd ..
+cd Q
+cd ..
+cd rick
+cd ..
+cd roll
+cd ..
+cd S
+cd ..
+cd T
+cd ..
+cd U
+cd ..
+cd V
+cd ..
+cd x
+cd ..
+cd z
+cd ..
+cd ..
+cd ..
+}/
+CMD/{..}/
+OUTPUT/{cd 1
+cd ..
+cd 2
+cd ..
+cd 3
+cd ..
+cd 4
+cd ..
+cd 5
+cd a
+cd b
+cd c
+cd ..
+cd d
+cd ..
+cd ..
+cd c
+cd d
+cd ..
+cd ..
+cd F
+cd H
+cd ..
+cd ..
+cd ..
+cd f
+cd A
+cd HateThis
+cd ..
+cd ..
+cd b
+cd Never gonna
+cd give you up
+cd ..
+cd let you down
+cd ..
+cd make you cry
+cd ..
+cd run around and desert you
+cd ..
+cd say goodbye
+cd ..
+cd tell a lie and hurt you
+cd ..
+cd ..
+cd ..
+cd C
+cd ..
+cd D
+cd a
+cd ..
+cd aaa
+cd ..
+cd b
+cd ..
+cd check
+cd ..
+cd d
+cd ..
+cd e
+cd ..
+cd ffff
+cd ..
+cd g
+cd ..
+cd h
+cd ..
+cd J
+cd ..
+cd N
+cd ..
+cd p
+cd ..
+cd Q
+cd ..
+cd rick
+cd ..
+cd roll
+cd ..
+cd S
+cd ..
+cd T
+cd ..
+cd U
+cd ..
+cd V
+cd ..
+cd x
+cd ..
+cd z
+cd ..
+cd ..
+cd ..
+cd ..
+}/
