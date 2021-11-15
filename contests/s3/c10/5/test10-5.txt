@@ -1,0 +1,15 @@
+CMD/{"x>5?summon:disqualify"}/
+INPUT/{4
+5
+6}/
+OUTPUT/{disqualify
+disqualify
+summon
+}/
+
+CMD/{"x*2>13?reject:summon"}/
+INPUT/{1
+42}/
+OUTPUT/{summon
+reject
+}/

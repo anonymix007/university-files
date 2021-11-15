@@ -1,0 +1,114 @@
+MAIN/{
+
+
+static int mayfork = 1;
+static int failtest = 0;
+
+#if fork == hooked_fork
+#undef fork
+#if exit == hooked_exit
+#undef exit
+#if execlp == hooked_execlp
+#undef execlp
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
+#include <stddef.h>
+#include <limits.h>
+#include <stdarg.h>
+pid_t hooked_fork(void){
+    //...
+    if(!mayfork) return -1;
+    pid_t pid = fork();
+    if(!pid) {
+        return 0;
+    }
+    // save process tree
+    return pid;
+}
+void hooked_exit(void){
+    puts("nope");
+    fflush(stdout);
+}
+int hooked_execlp(const char *file, const char *arg, ...)
+{
+  if(failtest) return -1;
+  ptrdiff_t argc;
+  va_list ap;
+  va_start (ap, arg);
+  for (argc = 1; va_arg (ap, const char *); argc++)
+    {
+      if (argc == INT_MAX)
+	{
+	  va_end (ap);
+	  errno = E2BIG;
+	  return -1;
+	}
+    }
+  va_end (ap);
+
+  /* Although posix does not state execlp as an async-safe function
+     it can not use malloc to allocate the arguments since it might
+     be used in a vfork scenario and it may lead to malloc internal
+     bad state.  */
+  ptrdiff_t i;
+  char *argv[argc + 1];
+  va_start (ap, arg);
+  argv[0] = (char *) arg;
+  for (i = 1; i <= argc; i++)
+    argv[i] = va_arg (ap, char *);
+  va_end (ap);
+
+  return execvp (file, argv);
+}
+
+#define fork hooked_fork
+#define exit hooked_exit
+#define execlp hooked_execlp
+#endif
+#endif
+#endif
+int mysys(const char *str);
+
+
+
+int main(void){
+    char cmd[1024];
+    fgets(cmd,1024,stdin);
+    scanf("%d%d", &mayfork, &failtest);
+    printf("%d\n", mysys(cmd));
+    return 0;
+}
+}/
+FLAGS/{-O2 -Dfork=hooked_fork -Dexit=hooked_exit -Dexeclp=hooked_execlp}/
+
+INPUT/{echo fuck
+1 0}/
+OUTPUT/{fuck
+0
+}/
+
+INPUT/{echo fuck
+0 0}/
+OUTPUT/{-1
+}/
+
+INPUT/{cat /usr/share/dict/american-english | wc -l
+1 0}/
+OUTPUT/{102401
+0
+}/
+
+INPUT/{./sf
+1}/
+OUTPUT/{Segmentation fault (core dumped)
+139
+}/
+
+
+INPUT/{nope
+1 1}/
+OUTPUT/{127
+}/
+

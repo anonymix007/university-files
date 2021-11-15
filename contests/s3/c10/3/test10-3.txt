@@ -1,0 +1,39 @@
+FLAGS/{-O2}/
+CHECKER/{checker.sh}/
+
+
+CMD/{echo echo echo}/
+OUTPUT/{OK
+}/
+
+CMD/{./ok ./ok ./ok}/
+OUTPUT/{OK
+}/
+
+CMD/{./ok ./ok ./nope}/
+OUTPUT/{OK
+}/
+
+CMD/{./ok ./nope ./ok}/
+OUTPUT/{OK
+}/
+
+CMD/{./ok ./nope ./nope}/
+OUTPUT/{OK
+}/
+
+CMD/{./nope ./ok ./ok}/
+OUTPUT/{OK
+}/
+
+CMD/{./nope ./ok ./nope}/
+OUTPUT/{OK
+}/
+
+CMD/{./nope ./nope ./ok}/
+OUTPUT/{OK
+}/
+
+CMD/{./nope ./nope ./nope}/
+OUTPUT/{OK
+}/
