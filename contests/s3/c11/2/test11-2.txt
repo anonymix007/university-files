@@ -1,0 +1,73 @@
+MAIN/{
+
+#undef printf
+#undef pipe
+#undef fork
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
+#include <stddef.h>
+#include <limits.h>
+#include <stdarg.h>
+int
+hooked_printf(char *format, ...)
+{
+    printf("==%d==(printf) ", getpid());
+    fflush(stdout);
+    va_list ptr;
+    va_start(ptr, format);
+    int res = vprintf(format, ptr);
+    va_end(ptr);
+    return res;
+}
+static int cnt;
+int
+hooked_pipe(int pipedes[2])
+{
+    if(cnt == 0){printf("==%d==(pipe)\n", getpid()); fflush(stdout);cnt++;}
+    return pipe(pipedes);
+}
+pid_t hooked_fork()
+{
+    static char filename[] = "pidtree.bin";
+    pid_t pid = fork();
+    if (pid == 0) {
+        FILE *file = fopen(filename, "a");
+        fprintf(file, "%d->%d\n", getppid(), getpid());
+        fclose(file);
+    }
+
+}
+#define pipe hooked_pipe
+#define printf hooked_printf
+#define fork hooked_fork
+}/
+FLAGS/{-O2 -Dprintf=hooked_printf -Dfork=hooked_fork -Dpipe=hooked_pipe}/
+
+CHECKER/{checker.pl}/
+
+INPUT/{1 2 3 4 5 6 7 8 9 10}/
+OUTPUT/{OK
+55
+}/
+INPUT/{1 2 3 4 5 6 7 8 9 11 13}/
+OUTPUT/{OK
+69
+}/
+
+INPUT/{202 434}/
+OUTPUT/{OK
+636
+}/
+
+INPUT/{-1 2 3 4 5 6 7 8 9 10}/
+OUTPUT/{OK
+53
+}/
+
+INPUT/{0 2 3 4 5 6 7 8 9 888}/
+OUTPUT/{OK
+932
+}/
+

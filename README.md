@@ -12,11 +12,15 @@ git clone --depth 1 https://github.com/anonymix007/university-files.git
 ```
 #### Install vival
 ```sh
-pip3 install vival==3.2.1
+pip3 install vival==3.4.1
 ```
 #### Install yandex disk utility
 ```sh
 pip3 install wldhx.yadisk-direct
+```
+#### Install jarwrapper
+```sh
+sudo apt-get install jarwrapper
 ```
 #### Perform tests from file `test03-3.txt` for program `contest`
 ```sh

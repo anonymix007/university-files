@@ -1,0 +1,18 @@
+CHECKER/{checker.sh}/
+
+CMD/{1 ls}/
+OUTPUT/{OK
+}/
+
+CMD/{4 ls cat cat wc}/
+OUTPUT/{OK
+}/
+
+CMD/{0}/
+OUTPUT/{OK
+}/
+
+CMD/{3 ./print cat wc}/
+OUTPUT/{OK
+}/
+

@@ -1,0 +1,38 @@
+FLAGS/{-O2}/
+CHECKER/{checker.sh}/
+
+
+CMD/{cat ./print wc tape/file1 tape/file2
+}/
+OUTPUT/{OK
+}/
+
+CMD/{./print_nope ls wc tape/file1 tape/file2
+}/
+OUTPUT/{OK
+}/
+
+CMD/{./print ls wc tape/file1 tape/file2
+}/
+OUTPUT/{OK
+}/
+
+CMD/{./print ls cat tape/file1 tape/file2
+}/
+OUTPUT/{OK
+}/
+
+CMD/{./print_nope ls cat tape/file1 tape/file2
+}/
+OUTPUT/{OK
+}/
+
+CMD/{ls ls cat tape/file1 tape/file2
+}/
+OUTPUT/{OK
+}/
+
+CMD/{./print_nope ls wc tape/file1 tape/file3
+}/
+OUTPUT/{OK
+}/

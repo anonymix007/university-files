@@ -1,0 +1,73 @@
+MAIN/{
+
+#undef printf
+#undef time
+#undef fork
+
+#include <stdarg.h>
+#include <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+int
+hooked_printf(char *format, ...)
+{
+    printf("==%d==(printf) ", getpid());
+    fflush(stdout);
+    va_list ptr;
+    va_start(ptr, format);
+    int res = vprintf(format, ptr);
+    va_end(ptr);
+    return res;
+}
+
+pid_t hooked_fork()
+{
+    static char filename[] = "pidtree.bin";
+    pid_t pid = fork();
+    if (pid == 0) {
+        FILE *file = fopen(filename, "a");
+        fprintf(file, "%d->%d\n", getppid(), getpid());
+        fclose(file);
+    }
+
+}
+
+time_t
+hooked_time(time_t *tm)
+{
+    printf("==%d==(time)\n", getpid());
+    fflush(stdout);
+    time_t t;
+    scanf("%ld", &t);
+    
+    if(tm){*tm = t;}
+    return t;
+}
+#define printf hooked_printf
+#define time hooked_time
+#define fork hooked_fork
+}/
+
+FLAGS/{-O2 -Dtime=hooked_time -Dprintf=hooked_printf -Dfork=hooked_fork}/
+CHECKER/{checker2.pl}/
+
+INPUT/{1637495864}/
+OUTPUT/{OK
+D:21
+M:11
+Y:2021
+}/
+
+INPUT/{1737495864}/
+OUTPUT/{OK
+D:22
+M:01
+Y:2025
+}/
+INPUT/{1737485864}/
+OUTPUT/{OK
+D:21
+M:01
+Y:2025
+}/
