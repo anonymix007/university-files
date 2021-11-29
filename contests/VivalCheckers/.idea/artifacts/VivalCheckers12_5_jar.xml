@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="VivalCheckers12_5:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/VivalCheckers12_5_jar</output-path>
+    <root id="archive" name="checker.jar">
+      <element id="module-output" name="VivalCheckers" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/2/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/out/production/VivalCheckers/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
