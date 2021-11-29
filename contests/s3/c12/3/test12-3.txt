@@ -1,0 +1,45 @@
+
+CMD/{3 tape/cmd1 tape/cmd2 tape/cmd3}/
+OUTPUT/{1
+}/
+
+CMD/{7 tape/cmd1 tape/cmd2 tape/cmd3 tape/cmd2 tape/cmd2}/
+OUTPUT/{3
+}/
+
+CMD/{1 tape/cmd1 tape/cmd2 tape/cmd3 tape/cmd2 tape/cmd2}/
+OUTPUT/{3
+}/
+
+CMD/{7 tape/cmd1 tape/cmd2 tape/cmd3 tape/cmd2 tape/cmd2 tape/cmd2 tape/cmd3}/
+OUTPUT/{4
+}/
+
+CMD/{636 tape/cmd2}/
+OUTPUT/{1
+}/
+
+CMD/{69 tape/cmd2 tape/cmd2}/
+OUTPUT/{2
+}/
+
+CMD/{434 tape/cmd1 tape/cmd3}/
+OUTPUT/{0
+}/
+
+CMD/{0 tape/cmd1 tape/cmd1}/
+OUTPUT/{0
+}/
+
+CMD/{434 tape/cmd1 tape/cmd4 tape/cmd5}/
+OUTPUT/{1
+}/
+
+CMD/{69 tape/cmd2 tape/cmd4 tape/cmd5}/
+OUTPUT/{2
+}/
+
+CMD/{636 tape/cmd2 tape/cmd4 tape/cmd3}/
+OUTPUT/{1
+}/
+

@@ -1,0 +1,7 @@
+CHECKER/{checker.jar}/
+OUTPUT/{OK
+}/
+
+CMD/{SIGHUP}/
+OUTPUT/{OK
+}/
