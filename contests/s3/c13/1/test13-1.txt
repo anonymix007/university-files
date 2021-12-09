@@ -1,0 +1,43 @@
+Args: memory_size, cache_size, block_size (16/32/64) filename
+
+CHECKER/{checker.sh}/
+
+CMD/{65536 32 16 10000trace0}/
+OUTPUT/{3712
+}/
+
+CMD/{65536 32 16 10000trace1}/
+OUTPUT/{3720
+}/
+
+CMD/{65536 32 16 10000trace2}/
+OUTPUT/{3697
+}/
+
+CMD/{65536 32 16 10000trace3}/
+OUTPUT/{3675
+}/
+
+CMD/{65536 32 16 10000trace4}/
+OUTPUT/{3746
+}/
+
+CMD/{65536 32 16 10000trace5}/
+OUTPUT/{3709
+}/
+
+CMD/{65536 32 16 10000trace6}/
+OUTPUT/{3684
+}/
+
+CMD/{65536 32 16 10000trace7}/
+OUTPUT/{3657
+}/
+
+CMD/{65536 32 16 10000trace8}/
+OUTPUT/{3638
+}/
+
+CMD/{65536 32 16 10000trace9}/
+OUTPUT/{3629
+}/
