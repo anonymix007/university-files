@@ -4,7 +4,7 @@ Install with pip: pip install vival
 Visit GitHub for more info: https://github.com/ViktorooReps/vival
 
 TIMEOUT 
-/{2.0}/
+/{5.0}/
 
 FLAGS/{-DVIVAL}/
 
@@ -24865,3 +24865,30 @@ OUTPUT
 15721
 }/
 
+CMD/{files2/test1.txt files2/test2.txt}/
+OUTPUT/{-1
+-1
+-1
+-1
+1
+1
+1
+1
+1
+1
+1
+4
+4
+4
+4
+4
+4
+4
+4
+4
+4
+11
+111
+111
+666
+}/
