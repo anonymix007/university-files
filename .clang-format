@@ -8,3 +8,7 @@ AlignAfterOpenBracket: DontAlign
 AlignOperands: DontAlign
 IndentCaseLabels: false
 # AllowAllArgumentsOnNextLine: true
+
+AccessModifierOffset: -4
+ConstructorInitializerIndentWidth: 4
+NamespaceIndentation: All
